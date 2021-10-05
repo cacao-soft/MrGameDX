@@ -142,34 +142,34 @@
 ## 入力関係の関数
 ### ジョイパッド入力関連関数
 
-- [ ] GetJoypadNum　ジョイパッドが接続されている数を取得する
-- [ ] GetJoypadInputState　ジョイパッドの入力状態を得る
-- [ ] GetJoypadAnalogInput　ジョイパッドのアナログ的なレバー入力情報を得る
+- [x] GetJoypadNum　ジョイパッドが接続されている数を取得する
+- [x] GetJoypadInputState　ジョイパッドの入力状態を得る
+- [x] GetJoypadAnalogInput　ジョイパッドのアナログ的なレバー入力情報を得る
 - [ ] GetJoypadDirectInputState　ジョイパッドのDirectInputから取得できる情報を得る
 - [ ] GetJoypadXInputState　ジョイパッドのXInputから取得できる情報を得る
-- [ ] SetJoypadDeadZone　ジョイパッドの方向入力の無効範囲を設定する
+- [x] SetJoypadDeadZone　ジョイパッドの方向入力の無効範囲を設定する
 - [ ] StartJoypadVibration　ジョイパッドの振動を開始する
 - [ ] StopJoypadVibration　ジョイパッドの振動を停止する
 
 ### マウス入力関連関数
 
-- [ ] SetMouseDispFlag　マウスカーソルの表示設定フラグのセット
-- [ ] GetMousePoint　マウスカーソルの位置を取得する
-- [ ] SetMousePoint　マウスカーソルの位置をセットする
-- [ ] GetMouseInput　マウスのボタンの状態を得る
-- [ ] GetMouseInputLog2　マウスのボタンが押されたり離されたりした履歴を取得する
-- [ ] GetMouseWheelRotVol　マウスホイールの回転量を得る
+- [x] SetMouseDispFlag　マウスカーソルの表示設定フラグのセット
+- [x] GetMousePoint　マウスカーソルの位置を取得する
+- [x] SetMousePoint　マウスカーソルの位置をセットする
+- [x] GetMouseInput　マウスのボタンの状態を得る
+- [x] GetMouseInputLog2　マウスのボタンが押されたり離されたりした履歴を取得する
+- [x] GetMouseWheelRotVol　マウスホイールの回転量を得る
 
 ### タッチパネル入力関連関数
 
-- [ ] GetTouchInputNum　タッチされている箇所の数を取得する
-- [ ] GetTouchInput　タッチされている箇所の情報を取得する
+- [x] GetTouchInputNum　タッチされている箇所の数を取得する
+- [x] GetTouchInput　タッチされている箇所の情報を取得する
 
 ### キーボード入力関連関数
 
-- [ ] CheckHitKeyAll　すべてのキーの押下状態を取得
-- [ ] CheckHitKey　特定キーの入力状態を得る
-- [ ] GetHitKeyStateAll　キーボードのすべてのキーの押下状態を取得する
+- [x] CheckHitKeyAll　すべてのキーの押下状態を取得
+- [x] CheckHitKey　特定キーの入力状態を得る
+- [x] GetHitKeyStateAll　キーボードのすべてのキーの押下状態を取得する
 
 ### 半角文字入力関連関数
 
