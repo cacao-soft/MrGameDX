@@ -5,7 +5,7 @@
 ## 使用必須関数
 - [ ] DxLib_Init　ライブラリの初期化
 - [ ] DxLib_End　ライブラリ使用の終了関数
-- [ ] ProcessMessage　ウインドウズのメッセージを処理する
+- [x] ProcessMessage　ウインドウズのメッセージを処理する
 
 
 ## 図形描画関数
@@ -69,7 +69,7 @@
 
 - [x] DrawString　文字列を描画する
 - [ ] DrawFormatString　書式付き文字列を描画する
-- [ ] GetDrawStringWidth　DrawString で描画される文字列の幅(ドット単位)を得る
+- [x] GetDrawStringWidth　DrawString で描画される文字列の幅(ドット単位)を得る
 - [ ] GetDrawFormatStringWidth　DrawFormatString 関数書式付き文字列の描画幅(ドット単位)を得る
 - [x] SetFontSize　描画する文字列のサイズをセットする
 - [x] SetFontThickness　描画する文字列の文字の太さをセットする
@@ -199,15 +199,15 @@
 
 ## 音利用関数
 
-- [ ] PlaySoundFile　音ファイルを再生する
-- [ ] CheckSoundFile　音ファイルが再生中か調べる
-- [ ] StopSoundFile　音ファイルの再生を止める
-- [ ] LoadSoundMem　音ファイルをメモリに読みこむ
-- [ ] PlaySoundMem　メモリに読みこんだ音データを再生する
-- [ ] CheckSoundMem　メモリに読みこんだ音データが再生中か調べる
-- [ ] StopSoundMem　メモリに読み込んだ音データの再生を止める
-- [ ] DeleteSoundMem　メモリに読みこんだ音データを削除する
-- [ ] InitSoundMem　メモリに読みこんだ音データをすべて消去する
+- [x] PlaySoundFile　音ファイルを再生する
+- [x] CheckSoundFile　音ファイルが再生中か調べる
+- [x] StopSoundFile　音ファイルの再生を止める
+- [x] LoadSoundMem　音ファイルをメモリに読みこむ
+- [x] PlaySoundMem　メモリに読みこんだ音データを再生する
+- [x] CheckSoundMem　メモリに読みこんだ音データが再生中か調べる
+- [x] StopSoundMem　メモリに読み込んだ音データの再生を止める
+- [x] DeleteSoundMem　メモリに読みこんだ音データを削除する
+- [x] InitSoundMem　メモリに読みこんだ音データをすべて消去する
 
 - [ ] ChangePanSoundMem　メモリに読みこんだ音データの再生にパンを設定する
 - [ ] ChangeVolumeSoundMem　メモリに読みこんだ音データの再生にボリュームを設定する
@@ -273,7 +273,7 @@
 ## ウインドウモード関係
 
 - [ ] ChangeWindowMode　ウインドウモード・フルスクリーンモードの変更を行う
-- [ ] SetMainWindowText　ウインドウのタイトルを変更する
+- [x] SetMainWindowText　ウインドウのタイトルを変更する
 - [ ] SetWindowIconID　ウインドウのアイコンを変更する
 - [ ] SetWindowSizeChangeEnableFlag　ウインドウモードの時にウインドウのサイズを自由に変更出来るようにするかどうかを設定する
 - [ ] SetWindowSizeExtendRate　ウインドウモードの時のウインドウの大きさと描画画面の大きさの比率を設定する
