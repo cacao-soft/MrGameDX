@@ -46,8 +46,8 @@
 - [ ] DrawRectGraph　グラフィックの指定矩形部分のみを描画
 - [ ] DerivationGraph　指定のグラフィックの指定部分だけを抜き出して新たなグラフィックを作成する
 - [ ] GetDrawScreenGraph　描画先に設定されているグラフィック領域から指定領域のグラフィックを読みこむ
-- [ ] GetGraphSize　グラフィックのサイズを得る
-- [ ] InitGraph　読みこんだグラフィックデータをすべて削除する
+- [x] GetGraphSize　グラフィックのサイズを得る
+- [x] InitGraph　読みこんだグラフィックデータをすべて削除する
 - [x] DeleteGraph　指定のグラフィックをメモリ上から削除する
 - [ ] SetDrawMode　描画モードをセットする
 - [ ] SetDrawBlendMode　描画の際のブレンドモードをセットする
