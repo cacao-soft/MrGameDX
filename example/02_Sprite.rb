@@ -18,3 +18,5 @@ Dxlib.loop do
   # Esc キーが押されたら終了
   break if Input.press?(:ESCAPE)
 end
+
+sp.dispose
