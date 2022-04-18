@@ -3,8 +3,8 @@
 
 
 ## 使用必須関数
-- [ ] DxLib_Init　ライブラリの初期化
-- [ ] DxLib_End　ライブラリ使用の終了関数
+- [x] DxLib_Init　ライブラリの初期化
+- [x] DxLib_End　ライブラリ使用の終了関数
 - [x] ProcessMessage　ウインドウズのメッセージを処理する
 
 
@@ -49,10 +49,10 @@
 - [x] GetGraphSize　グラフィックのサイズを得る
 - [x] InitGraph　読みこんだグラフィックデータをすべて削除する
 - [x] DeleteGraph　指定のグラフィックをメモリ上から削除する
-- [ ] SetDrawMode　描画モードをセットする
-- [ ] SetDrawBlendMode　描画の際のブレンドモードをセットする
-- [ ] SetDrawBright　描画輝度をセット
-- [ ] SetTransColor　グラフィックに設定する透過色をセットする
+- [x] SetDrawMode　描画モードをセットする
+- [x] SetDrawBlendMode　描画の際のブレンドモードをセットする
+- [x] SetDrawBright　描画輝度をセット
+- [x] SetTransColor　グラフィックに設定する透過色をセットする
 
 - [ ] LoadBlendGraph　画像ファイルからブレンド画像を読み込む
 - [ ] DrawBlendGraph　ブレンド画像と通常画像を合成して描画する
@@ -96,15 +96,15 @@
 
 ## その他画面操作系関数
 
-- [ ] SetGraphMode　画面モードの変更
+- [x] SetGraphMode　画面モードの変更
 - [ ] SetFullScreenResolutionMode　フルスクリーンモード時の解像度モードを設定する
 - [ ] SetFullScreenScalingMode　フルスクリーンモード時の画面拡大モードを設定する
-- [ ] GetScreenState　現在の画面の大きさとカラービット数を得る
-- [ ] SetDrawArea　描画可能領域のセット
-- [ ] ClearDrawScreen　画面に描かれたものを消去する
+- [x] GetScreenState　現在の画面の大きさとカラービット数を得る
+- [x] SetDrawArea　描画可能領域のセット
+- [x] ClearDrawScreen　画面に描かれたものを消去する
 - [ ] ClearDrawScreenZBuffer　深度バッファをクリアする
-- [ ] SetBackgroundColor　画面の背景色を設定する
-- [ ] GetColor　色コードを取得する
+- [x] SetBackgroundColor　画面の背景色を設定する
+- [x] GetColor　色コードを取得する
 - [x] SetDrawScreen　描画先グラフィック領域の指定
 - [ ] ScreenFlip　フリップ関数、画面の裏ページ(普段は表示されていない)の内容を表ページ(普段表示されている)に反映する
 - [ ] SetFullSceneAntiAliasingMode　画面のフルスクリーンアンチエイリアスモードの設定をする
@@ -222,24 +222,7 @@
 - [ ] SetCreateSoundPitchRate　作成するメモリに読み込んだ音データのピッチ( 音の長さを変えずに音程を変更する )レートを設定する
 - [ ] SetCreateSoundTimeStretchRate　作成するメモリに読み込んだ音データのタイムストレッチ( 音程を変えずに音の長さを変更する )レートを設定する
 
-- [ ] Set3DPositionSoundMem　メモリに読み込んだ音データの３Ｄサウンド用の再生位置を設定する
-- [ ] Set3DRadiusSoundMem　メモリに読み込んだ音データの３Ｄサウンド用の音が聞こえる距離を設定する
-- [ ] Set3DVelocitySoundMem　メモリに読み込んだ音データの３Ｄサウンド用の移動速度を設定する
-- [ ] SetNextPlay3DPositionSoundMem　メモリに読み込んだ音データの次の再生のみに使用する３Ｄサウンド用の再生位置を設定する
-- [ ] SetNextPlay3DRadiusSoundMem　メモリに読み込んだ音データの次の再生のみに使用する３Ｄサウンド用の音が聞こえる距離を設定する
-- [ ] SetNextPlay3DVelocitySoundMem　メモリに読み込んだ音データの次の再生のみに使用する３Ｄサウンド用の移動速度を設定する
-- [ ] Set3DReverbParamSoundMem　メモリに読み込んだ音データの３Ｄサウンド用のリバーブエフェクトパラメータを設定する
-- [ ] Set3DPresetReverbParamSoundMem　メモリに読み込んだ音データの３Ｄサウンド用のリバーブエフェクトパラメータをプリセットを使用して設定する
-- [ ] Get3DPresetReverbParamSoundMem　３Ｄサウンド用のプリセットのリバーブエフェクトパラメータを取得する
-- [ ] Set3DReverbParamSoundMemAll　全てのメモリに読み込んだ音データの３Ｄサウンド用のリバーブエフェクトパラメータを設定する
-- [ ] Set3DPresetReverbParamSoundMemAll　全てのメモリに読み込んだ音データの３Ｄサウンド用のリバーブエフェクトパラメータをプリセットを使用して設定する
-
-- [ ] SetCreate3DSoundFlag　次に作成するメモリに読み込む音データを３Ｄサウンド用にするかどうかを設定する
 - [ ] SetEnableXAudioFlag　サウンドの再生にXAudio2を使用するかどうかを設定する
-- [ ] Set3DSoundOneMetre　３Ｄ空間の１メートルに相当する距離を設定する
-- [ ] Set3DSoundListenerPosAndFrontPos_UpVecY　３Ｄサウンドのリスナーの位置とリスナーの前方位置を設定する
-- [ ] Set3DSoundListenerPosAndFrontPosAndUpVec　３Ｄサウンドのリスナーの位置とリスナーの前方位置とリスナーの上方向を設定する
-- [ ] Set3DSoundListenerVelocity　３Ｄサウンドのリスナーの移動速度を設定する
 
 
 ## 音楽再生関数
@@ -305,13 +288,13 @@
 ## ファイル読み込み関係
 
 - [x] FileRead_open　ファイルを開く
-- [ ] FileRead_size　ファイルのサイズを得る
+- [x] FileRead_size　ファイルのサイズを得る
 - [x] FileRead_close　ファイルを閉じる
 - [ ] FileRead_tell　ファイルポインタの位置を得る
 - [ ] FileRead_seek　ファイルポインタの位置を変更する
-- [ ] FileRead_read　ファイルからデータを読み込む
+- [x] FileRead_read　ファイルからデータを読み込む
 - [x] FileRead_eof　ファイルの終端かどうかを調べる
-- [ ] FileRead_gets　ファイルから一行読み出す
+- [x] FileRead_gets　ファイルから一行読み出す
 - [ ] FileRead_getc　ファイルから一文字読み出す
 - [ ] FileRead_scanf　ファイルから書式付きデータを読み出す
 
@@ -366,7 +349,6 @@
 - [ ] SetDXArchiveKeyString　ＤＸアーカイブファイルの鍵文字列を設定する
 
 - [ ] SetEmulation320x240　６４０ｘ４８０の画面で３２０ｘ２４０の画面解像度にするかどうかのフラグをセットする
-- [ ] SetUse3DFlag　３Ｄ機能を使うか、のフラグをセット
 - [ ] SetWaitVSyncFlag　ScreenFlip関数実行時にＣＲＴの垂直同期信号待ちをするかのフラグセット
 - [ ] SetUseDivGraphFlag　必要ならグラフィックの分割を行うか否かを設定する
 - [ ] LoadPauseGraph　フォーカスが他のソフトに移っているときにバックグラウンドに表示するグラフィックを設定する
