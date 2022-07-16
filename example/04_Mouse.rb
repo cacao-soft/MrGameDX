@@ -11,15 +11,15 @@ c = ""
 Dxlib.loop do
   # 現在のマウスの位置を配列で取得
   r = Dxlib::GetMousePoint()
-  Dxlib::DrawString(12, 12+16*0, r.to_s, 0xFFFFFF)
+  Dxlib::DrawString(12, 12+16*0, r.to_s)
   # 現在のマウスの位置を配列に代入
   Dxlib::GetMousePoint(a)
-  Dxlib::DrawString(12, 12+16*1, a.to_s, 0xFFFFFF)
+  Dxlib::DrawString(12, 12+16*1, a.to_s)
   # 現在のマウスの位置をオブジェクトの @x,@y に代入
   Dxlib::GetMousePoint(pos)
-  Dxlib::DrawString(12, 12+16*2, pos.inspect, 0xFFFFFF)
+  Dxlib::DrawString(12, 12+16*2, pos.inspect)
   # 現在のマウスの位置を個別に取得
-  Dxlib::DrawString(12, 12+16*3, "#{Input.mousex}, #{Input.mousey}", 0xFFFFFF)
+  Dxlib::DrawString(12, 12+16*3, "#{Input.mousex}, #{Input.mousey}")
 
   break if Input.trigger?(:RCLICK)
   if Input.trigger?(:LCLICK)
@@ -34,5 +34,5 @@ Dxlib.loop do
     c = "None"
     b = []
   end
-  Dxlib::DrawString(12, 12+16*4, "#{c}: (#{b.join(',')})", 0xFFFFFF)
+  Dxlib::DrawString(12, 12+16*4, "#{c}: (#{b.join(',')})")
 end

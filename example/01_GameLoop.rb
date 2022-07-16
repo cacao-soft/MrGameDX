@@ -9,5 +9,5 @@ Dxlib.loop do |fps|
   # Esc キーが押されたら終了
   break if Input.press?(:ESCAPE)
   # FPS を画面に描画
-  Dxlib::DrawString(0, 0, "FPS: #{fps}", 0xFFFFFF)
+  Dxlib::DrawString(0, 0, "FPS: #{fps}")
 end

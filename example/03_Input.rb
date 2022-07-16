@@ -1,29 +1,29 @@
 =begin
-  
+
   Input.press?(kcode)
     指定されたキーが押されているかを判定
     1111111111111111111111111111111111111111111111111111
-  
+
   Input.long_press?(kcode)
     指定されたキーが長押しされているかを判定
     ........................1111111111111111111111111111
-  
+
   Input.trigger?(kcode)
     指定されたキーが新たに押されたかを判定
     1...................................................
-  
+
   Input.repeat?(kcode)
     指定されたキーを押し続けていれば一定間隔で真を返す
     1.......................1.....1.....1.....1.....1...
-  
+
 
   kcode
     キーコード (数値) もしくはシンボル
-  
+
   :ESCAPE, :SPACE, :LSHIFT, :LCTRL
   :UP, :DOWN, :LEFT, :RIGHT 十字キー
-  :A Ａボタン（z キー）       Input::K_A
-  :B Ｂボタン（x キー）       Input::K_B
+  :A Ａボタン（Z キー）       Input::K_A
+  :B Ｂボタン（X キー）       Input::K_B
   :C Ｃボタン（LShift キー）  Input::K_C
   :X Ｘボタン（C キー）       Input::K_X
   :Y Ｙボタン（D キー）       Input::K_Y
@@ -31,19 +31,23 @@
   :L Ｌボタン（A キー）       Input::K_L
   :R Ｒボタン（S キー）       Input::K_R
   :LCLICK, :RCLICK, :MCLICK マウスクリック
-  
+
   定数 Input::K_* を再代入することでボタンに割り当てるキーを変更可能
-  
+
 =end
 
 
 Dxlib.loop do
   break if Input.trigger?(:ESCAPE)
+
+  Dxlib::DrawString(4, 4, "Aボタン(Z)を押してください。")
+  Dxlib::DrawString(4, 26, "Bボタン(X)でAボタンを F キーに変更します。")
+
   # Ａボタン(Zキー)
   if Input.trigger?(:A)
-    puts "A"
+    puts "A ボタン"
   end
-  # Ｂボタン(xキー)
+  # Ｂボタン(Xキー)
   if Input.trigger?(:B)
     # ＡボタンをFキーに変更
     Input::K_A = 0x21 # F

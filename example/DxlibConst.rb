@@ -153,7 +153,7 @@ DX_BLENDMODE_SUB = 3  # 減算ブレンド
 DX_BLENDMODE_MUL = 4  # 乗算ブレンド
    # (内部処理用)
 DX_BLENDMODE_SUB2 = 5  # 内部処理用減算ブレンド２
-//#define DX_BLENDMODE_BLINEALPHA					(7)  # 境界線ぼかし
+# DX_BLENDMODE_BLINEALPHA = 7  # 境界線ぼかし
 DX_BLENDMODE_XOR = 6  # XORブレンド( ソフトウエアレンダリングモードでのみ有効 )
 DX_BLENDMODE_DESTCOLOR = 8  # カラーは更新されない
 DX_BLENDMODE_INVDESTCOLOR = 9  # 描画先の色の反転値を掛ける
@@ -355,7 +355,7 @@ MV1_ANIMKEY_TYPE_QUATERNION_VMD = 7  # クォータニオン( VMDタイプ )
 
 # 描画先画面指定用定義
 DX_SCREEN_FRONT = 0xfffffffc
-DX_SCREEN_BACK = 0xfffffffe 
+DX_SCREEN_BACK = 0xfffffffe
 DX_SCREEN_WORK  = 0xfffffffd
 DX_SCREEN_TEMPFRONT = 0xfffffff0
 DX_SCREEN_OTHER = 0xfffffffa
@@ -463,8 +463,8 @@ DX_CMP_GREATER = 5  # Src >  Dest		DrawAlpha >  TestParam
 DX_CMP_NOTEQUAL = 6  # Src != Dest		DrawAlpha != TestParam
 DX_CMP_GREATEREQUAL = 7  # Src >= Dest		DrawAlpha >= TestParam
 DX_CMP_ALWAYS = 8  # TRUE
-DX_ZCMP_DEFAULT =  DX_CMP_LESSEQUAL 
-DX_ZCMP_REVERSE =  DX_CMP_GREATEREQUAL 
+DX_ZCMP_DEFAULT =  DX_CMP_LESSEQUAL
+DX_ZCMP_REVERSE =  DX_CMP_GREATEREQUAL
 
 # シェーディングモード
 DX_SHADEMODE_FLAT = 1  # D_D3DSHADE_FLAT

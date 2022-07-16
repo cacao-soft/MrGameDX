@@ -7,11 +7,13 @@ sp.x = 100
 sp.y = 200
 # 画像を設定
 sp.image = Image.new(64, 64)
+# 画像に四角を描画
+sp.image.draw_boxf(0, 0, 64, 64, 0xFFFFFF)
 # 画像に円を描画
-sp.image.draw_circle(32, 32, 32, 0xFFFF00)
+sp.image.draw_circle(32, 32, 31, 0x008800)
 # 画面の中央へ移動
-sp.x = (Graphics.width - sp.image.width) / 2
-sp.y = (Graphics.height - sp.image.height) / 2
+sp.x = (Dxlib.screen_width - sp.image.width) / 2
+sp.y = (Dxlib.screen_height - sp.image.height) / 2
 
 # メインループ
 Dxlib.loop do
