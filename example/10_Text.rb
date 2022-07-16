@@ -55,12 +55,10 @@ Dxlib.loop do |fps|
   # Esc キーが押されたら終了
   break if Input.press?(:ESCAPE)
 
-#  Dxlib::DrawString(0, 0, "ABC 012 いろは", 0xFFFFFF)
- Dxlib::SetDrawBlendMode(0)
+  Dxlib::SetDrawBlendMode(0)
   s = "ABC 012 いろは #{fps}"
   Dxlib::DrawGradString(8, 32, s, -2, 0xFFFFFF, 0xFF0000)
   Dxlib::DrawGradString(170, 32, "<- この文字は #{s.size} 文字です。", -2, 0xFFFFAA, 0x00FFFF)
-#  Dxlib::DrawGradStringAA(0, 64, "ABC 012 いろは", 0xFFFFFF, 0x0000FF)
 
   Dxlib::DrawGradBox(32, 80, 100, 64, 0x00FF00, 0xFFFF00)
   Dxlib::DrawGradBox(150, 80, 100, 64, 0xFF00FF, 0x00FFFF, true)
