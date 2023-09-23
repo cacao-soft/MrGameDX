@@ -20,7 +20,7 @@ Dxlib.loop do
   # Esc キーが押されたら終了
   break if Input.press?(:ESCAPE)
   
-  if Input.press?(:SHIFT)　# シフトキーと同時押し
+  if Input.press?(:SHIFT)   # シフトキーと同時押し
   	# 大きさを変更
     if Input.press?(:UP)
       sp.zoom_x = sp.zoom_y += 0.1

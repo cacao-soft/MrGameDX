@@ -126,7 +126,7 @@
 - Sound.stop
 - Sound.clear
 - Sound.load(key, filename, **opts)
-- Sound.[](key)
+- Sound.\[](key)
 - Sound#new(filename, **opts)
 - Sound#play
 - Sound#play?
@@ -136,14 +136,17 @@
 
 ## Table
 
-- Table.new(x, y, z=1)
+- Table.new(xsize, ysize, zsize = 1)
 - Table#each
 - reader: xsize, ysize, zsize
 - accessor: \[index], \[x, y, z = 1]
 
 ## Tileset
 
-- Tileset.new(xsize, ysize, zsize = 1)
+- Tileset.new(filename, tile_width, tile_height, column, row)
+- Tileset.new(\[filename], tile_width, tile_height, column, row)
+- Tileset.new(tileset_image, tile_width, tile_height, column, row)
+- Tileset.new(\[\[tile_image]], tile_width, tile_height, column, row)
 - Tileset#each
 - reader: xsize, ysize, zsize
 - accessor: \[index], \[x, y, z = 1]
