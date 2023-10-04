@@ -49,6 +49,7 @@
 - Bitmap.new(filename)
 - Bitmap#derive(x, y, width, height)
 - Bitmap#divide(x, y, width, height, column, row, total = 0)
+- Bitmap#divide_evenly(x, y, width, height, column, row, total = 0)
 - Bitmap#dispose
 - Bitmap#disposed?
 - reader: width, height, handle
@@ -60,7 +61,7 @@
 - Image#clear(rect = nil)
 - Image#clear(x, y, width, height)
 - Image#draw_image(x, y, image, rect = nil, opacity = 255)
-- Image#draw\_stretch(dest_rect, image, src_rect, opacity = 255)
+- Image#draw_stretch(dest_rect, image, src_rect, opacity = 255)
 - Image#draw_box(color)
 - Image#draw_box(color, edge_size)
 - Image#draw_box(rect, color, edge_size = 1)
@@ -68,6 +69,7 @@
 - Image#draw_boxf(color)
 - Image#draw_boxf(rect, color)
 - Image#draw_boxf(x, y, width, height, color)
+- Image#draw_quadrangle(x1, y1, x2, y2, x3, y3, x4, y4, color, fill = true)
 - Image#draw_circle(x, y, radius, color)
 - Image#draw_text(text)
 - Image#draw_text(rect, text, align = 0)
@@ -125,14 +127,15 @@
 - Sound.play?
 - Sound.stop
 - Sound.clear
-- Sound.load(key, filename, **opts)
+- Sound.load(key, filename, *args, **opts)
+- Sound.loaded?(key)
 - Sound.\[](key)
 - Sound#new(filename, **opts)
 - Sound#play
 - Sound#play?
 - Sound#stop
 - reader: total_time, handle
-- accessor: loop_time, continue, background, time
+- accessor: loop_time, continue, background, time, volume
 
 ## Table
 
@@ -196,7 +199,7 @@
 
 ## Zlib
 
-+ Zlib.deflate
-+ Zlib.inflate
-+ Zlib.gzip
-+ Zlib.crc32
+- Zlib.deflate
+- Zlib.inflate
+- Zlib.gzip
+- Zlib.crc32

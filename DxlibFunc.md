@@ -1,12 +1,10 @@
 # ＤＸライブラリ関数 対応状況
 
-
-
 ## 使用必須関数
+
 - [x] DxLib_Init　ライブラリの初期化
 - [x] DxLib_End　ライブラリ使用の終了関数
 - [x] ProcessMessage　ウインドウズのメッセージを処理する
-
 
 ## 図形描画関数
 
@@ -22,7 +20,6 @@
 - [x] DrawTriangleAA　三角形の描画(アンチエイリアス効果付き)
 - [x] DrawPixel　点を描画する
 - [x] GetPixel　指定点の色を取得
-
 
 ## グラフィックデータ制御関数
 
@@ -64,7 +61,6 @@
 - [ ] GraphBlendBlt　二つの画像を特殊効果付きでブレンドする( 出力先画像指定版 )
 - [ ] GraphBlendRectBlt　二つの画像を特殊効果付きでブレンドする( 出力先画像、使用矩形指定版 )
 
-
 ## 文字描画関係関数
 
 - [x] DrawString　文字列を描画する
@@ -87,12 +83,10 @@
 - [x] GetFontStateToHandle　指定のフォントデータの情報を得る
 - [x] InitFontToHandle　フォントデータを全て初期化する
 
-
 ## 簡易画面出力関数
 
 - [ ] printfDx　簡易文字列描画
 - [ ] clsDx　簡易画面出力履歴をクリアする
-
 
 ## その他画面操作系関数
 
@@ -109,7 +103,6 @@
 - [ ] ScreenFlip　フリップ関数、画面の裏ページ(普段は表示されていない)の内容を表ページ(普段表示されている)に反映する
 - [ ] SetFullSceneAntiAliasingMode　画面のフルスクリーンアンチエイリアスモードの設定をする
 
-
 ## 動画関係関数
 
 - [ ] PlayMovie　動画ファイルの再生
@@ -118,7 +111,6 @@
 - [ ] SeekMovieToGraph　ムービーグラフィックの動画の再生位置を変更する
 - [ ] TellMovieToGraph　ムービーグラフィックの動画の再生位置を得る
 - [ ] GetMovieStateToGraph　ムービーグラフィックの動画の再生状態を得る
-
 
 ## マスク関係関数
 
@@ -138,8 +130,8 @@
 - [ ] DrawMaskToDirectData　マスクのデータをマスク画面に直接描画する
 - [ ] DrawFillMaskToDirectData　マスクのデータをタイル上に並べた形で直接マスク画面全体に描画する
 
-
 ## 入力関係の関数
+
 ### ジョイパッド入力関連関数
 
 - [x] GetJoypadNum　ジョイパッドが接続されている数を取得する
@@ -196,7 +188,6 @@
 - [ ] GetKeyInputString　入力データの文字列を取得する
 - [ ] GetKeyInputNumber　入力データの文字列を数値として取得する
 
-
 ## 音利用関数
 
 - [x] PlaySoundFile　音ファイルを再生する
@@ -209,21 +200,20 @@
 - [x] DeleteSoundMem　メモリに読みこんだ音データを削除する
 - [x] InitSoundMem　メモリに読みこんだ音データをすべて消去する
 
-- [ ] ChangePanSoundMem　メモリに読みこんだ音データの再生にパンを設定する
-- [ ] ChangeVolumeSoundMem　メモリに読みこんだ音データの再生にボリュームを設定する
-- [ ] ChangeNextPlayPanSoundMem　メモリに読みこんだ音データの次の再生にのみ使用するパンを設定する
-- [ ] ChangeNextPlayVolumeSoundMem　メモリに読みこんだ音データの次の再生にのみ使用するボリュームを設定する
+- [x] ChangePanSoundMem　メモリに読みこんだ音データの再生にパンを設定する
+- [x] ChangeVolumeSoundMem　メモリに読みこんだ音データの再生にボリュームを設定する
+- [x] ChangeNextPlayPanSoundMem　メモリに読みこんだ音データの次の再生にのみ使用するパンを設定する
+- [x] ChangeNextPlayVolumeSoundMem　メモリに読みこんだ音データの次の再生にのみ使用するボリュームを設定する
 - [ ] SetFrequencySoundMem　メモリに読み込んだ音データの再生周波数を設定する
-- [ ] SetLoopPosSoundMem　メモリに読み込んだ音データのループ位置を設定する
+- [x] SetLoopPosSoundMem　メモリに読み込んだ音データのループ位置を設定する
 - [ ] SetLoopSamplePosSoundMem　メモリに読み込んだ音データのループ位置を設定する(サンプル位置指定)
 - [ ] SetCurrentPositionSoundMem　メモリに読み込んだ音データの再生位置をサンプル単位で変更する
 - [ ] DuplicateSoundMem　既にメモリに読み込んである音データを使用するサウンドハンドルを新たに作成する( 非ストリームサウンドのみ )
 
-- [ ] SetCreateSoundPitchRate　作成するメモリに読み込んだ音データのピッチ( 音の長さを変えずに音程を変更する )レートを設定する
+- [x] SetCreateSoundPitchRate　作成するメモリに読み込んだ音データのピッチ( 音の長さを変えずに音程を変更する )レートを設定する
 - [ ] SetCreateSoundTimeStretchRate　作成するメモリに読み込んだ音データのタイムストレッチ( 音程を変えずに音の長さを変更する )レートを設定する
 
 - [ ] SetEnableXAudioFlag　サウンドの再生にXAudio2を使用するかどうかを設定する
-
 
 ## 音楽再生関数
 
@@ -232,13 +222,11 @@
 - [ ] StopMusic　ＭＩＤＩ又はＭＰ３ファイルの演奏(再生)停止
 - [ ] SetVolumeMusic　ＭＩＤＩ又はＭＰ３ファイルの演奏(再生)の音量を設定する
 
-
 ## ウエイト関係の関数
 
 - [x] WaitTimer　指定の時間だけ処理をとめる
 - [ ] WaitVSync　ディスプレイの垂直同期信号を指定回数待つ
 - [ ] WaitKey　キーの入力待ち
-
 
 ## 時間関係の関数
 
@@ -246,12 +234,10 @@
 - [ ] GetNowHiPerformanceCount　GetNowCountの高精度バージョン
 - [ ] GetDateTime　現在時刻を取得する
 
-
 ## 乱数取得関数
 
 - [ ] GetRand　乱数を取得する
 - [ ] SRand　乱数の初期値を設定する
-
 
 ## ウインドウモード関係
 
@@ -260,7 +246,6 @@
 - [ ] SetWindowIconID　ウインドウのアイコンを変更する
 - [ ] SetWindowSizeChangeEnableFlag　ウインドウモードの時にウインドウのサイズを自由に変更出来るようにするかどうかを設定する
 - [ ] SetWindowSizeExtendRate　ウインドウモードの時のウインドウの大きさと描画画面の大きさの比率を設定する
-
 
 ## 通信関係
 
@@ -284,7 +269,6 @@
 - [ ] NetWorkRecvUDP　ＵＤＰを使用して他のマシンからのデータを受信する
 - [ ] CheckNetWorkRecvUDP　ＵＤＰを使用した他のマシンから受信データがあるかどうかを取得する
 
-
 ## ファイル読み込み関係
 
 - [x] FileRead_open　ファイルを開く
@@ -297,7 +281,6 @@
 - [x] FileRead_gets　ファイルから一行読み出す
 - [ ] FileRead_getc　ファイルから一文字読み出す
 - [ ] FileRead_scanf　ファイルから書式付きデータを読み出す
-
 
 ## ドット単位で画像にアクセスしたい関係
 
@@ -325,19 +308,16 @@
 - [ ] CreateGraphFromSoftImage　ＣＰＵで扱うイメージからグラフィックハンドルを作成する
 - [ ] CreateDivGraphFromSoftImage　ＣＰＵで扱うイメージから分割グラフィックハンドルを作成する
 
-
 ## 非同期読み込み関係
 
 - [ ] SetUseASyncLoadFlag　非同期読み込みを行うかどうかを設定する
 - [ ] CheckHandleASyncLoad　ハンドルが非同期読み込み中かどうかを取得する
 - [ ] GetASyncLoadNum　行っている非同期読み込みの数を取得する
 
-
 ## 文字関係関数
 
 - [ ] SetUseCharCodeFormat　文字列の引数の文字コードを設定する
 - [ ] GetCharBytes　文字列の先頭の文字のバイト数を取得する
-
 
 ## マイナー関数
 
