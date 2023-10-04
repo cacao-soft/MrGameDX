@@ -13,5 +13,5 @@ Dxlib.loop do |fps|
   # Esc キーが押されたら終了
   break if Input.press?(:ESCAPE)
   # FPS をタイトルに表示
-  Dxlib.window_text = "サンプル (FPS: #{fps} )"
+  Dxlib.window_text = "#{Dxlib::VERSION} (FPS: #{fps} )"
 end

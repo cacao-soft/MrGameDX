@@ -38,12 +38,12 @@ DEFAULT_TAN_FOV_HALF = 0.57735026918962576450914878050196 # tan( FOV * 0.5 )
 DEFAULT_NEAR = 0.0     # NEARクリップ面
 DEFAULT_FAR = 20000.0  # FARクリップ面
 
-DX_DEFAULT_FONT_HANDLE = -2               # デフォルトフォントを示す値
+DX_DEFAULT_FONT_HANDLE = -2       # デフォルトフォントを示す値
 
-DEFAULT_FONT_SIZE = 16                    # フォントのデフォルトのサイズ
-DEFAULT_FONT_THINCK = 6                   # フォントのデフォルトの太さ
-DEFAULT_FONT_TYPE =  DX_FONTTYPE_NORMAL   # フォントのデフォルトの形態
-DEFAULT_FONT_EDGESIZE = 1                 # フォントのデフォルトの太さ
+DEFAULT_FONT_SIZE = 16            # フォントのデフォルトのサイズ
+DEFAULT_FONT_THINCK = 6           # フォントのデフォルトの太さ
+DEFAULT_FONT_TYPE = 0             # フォントのデフォルトの形態 (DX_FONTTYPE_NORMAL)
+DEFAULT_FONT_EDGESIZE = 1         # フォントのデフォルトの太さ
 
 MAX_USERIMAGEREAD_FUNCNUM = 10  # ユーザーが登録できるグラフィックロード関数の最大数
 
@@ -92,15 +92,15 @@ DX_DIRECT3D_11_FEATURE_LEVEL_11_0 = 0xb000
 DX_DIRECT3D_11_FEATURE_LEVEL_11_1 = 0xb100
 
 # 文字セット
-DX_CHARSET_DEFAULT = 0  # デフォルト文字セット
-DX_CHARSET_SHFTJIS = 1  # シフトJIS
-DX_CHARSET_HANGEUL = 2  # ハングル文字セット
-DX_CHARSET_BIG5 = 3  # 繁体文字セット
-DX_CHARSET_GB2312 = 4  # 簡体文字セット
-DX_CHARSET_WINDOWS_1252 = 5  # 欧文(ラテン文字の文字コード)
+DX_CHARSET_DEFAULT = 0          # デフォルト文字セット
+DX_CHARSET_SHFTJIS = 1          # シフトJIS
+DX_CHARSET_HANGEUL = 2          # ハングル文字セット
+DX_CHARSET_BIG5 = 3             # 繁体文字セット
+DX_CHARSET_GB2312 = 4           # 簡体文字セット
+DX_CHARSET_WINDOWS_1252 = 5     # 欧文(ラテン文字の文字コード)
 DX_CHARSET_ISO_IEC_8859_15 = 6  # 欧文(ラテン文字の文字コード)
-DX_CHARSET_UTF8 = 7  # UTF-8
-DX_CHARSET_NUM = 8  # 文字セットの数
+DX_CHARSET_UTF8 = 7             # UTF-8
+DX_CHARSET_NUM = 8              # 文字セットの数
 
 # 文字コード形式
 DX_CHARCODEFORMAT_SHIFTJIS = 932            # シフトJISコード
@@ -131,12 +131,12 @@ DX_DRAWMODE_OTHER = 3  # それ以外
 DX_DRAWMODE_NUM = 4  # 描画モードの数
 
 # フォントのタイプ
-DX_FONTTYPE_NORMAL = 0x00  # ノーマルフォント
-DX_FONTTYPE_EDGE = 0x01  # エッジつきフォント
-DX_FONTTYPE_ANTIALIASING = 0x02  # アンチエイリアスフォント( 標準機能アンチエイリアス )
-DX_FONTTYPE_ANTIALIASING_4X4 = 0x12  # アンチエイリアスフォント( 4x4サンプリング )
-DX_FONTTYPE_ANTIALIASING_8X8 = 0x22  # アンチエイリアスフォント( 8x8サンプリング )
-DX_FONTTYPE_ANTIALIASING_EDGE = 0x03  # アンチエイリアス＆エッジ付きフォント( 標準機能アンチエイリアス )
+DX_FONTTYPE_NORMAL = 0x00                 # ノーマルフォント
+DX_FONTTYPE_EDGE = 0x01                   # エッジつきフォント
+DX_FONTTYPE_ANTIALIASING = 0x02           # アンチエイリアスフォント( 標準機能アンチエイリアス )
+DX_FONTTYPE_ANTIALIASING_4X4 = 0x12       # アンチエイリアスフォント( 4x4サンプリング )
+DX_FONTTYPE_ANTIALIASING_8X8 = 0x22       # アンチエイリアスフォント( 8x8サンプリング )
+DX_FONTTYPE_ANTIALIASING_EDGE = 0x03      # アンチエイリアス＆エッジ付きフォント( 標準機能アンチエイリアス )
 DX_FONTTYPE_ANTIALIASING_EDGE_4X4 = 0x13  # アンチエイリアス＆エッジ付きフォント( 4x4サンプリング )
 DX_FONTTYPE_ANTIALIASING_EDGE_8X8 = 0x23  # アンチエイリアス＆エッジ付きフォント( 8x8サンプリング )
 
@@ -147,35 +147,35 @@ DX_FONTIMAGE_BIT_8 = 2
 
 # 描画ブレンドモード定義
 DX_BLENDMODE_NOBLEND = 0  # ノーブレンド
-DX_BLENDMODE_ALPHA = 1  # αブレンド
-DX_BLENDMODE_ADD = 2  # 加算ブレンド
-DX_BLENDMODE_SUB = 3  # 減算ブレンド
-DX_BLENDMODE_MUL = 4  # 乗算ブレンド
+DX_BLENDMODE_ALPHA = 1    # αブレンド
+DX_BLENDMODE_ADD = 2      # 加算ブレンド
+DX_BLENDMODE_SUB = 3      # 減算ブレンド
+DX_BLENDMODE_MUL = 4      # 乗算ブレンド
    # (内部処理用)
-DX_BLENDMODE_SUB2 = 5  # 内部処理用減算ブレンド２
-# DX_BLENDMODE_BLINEALPHA = 7  # 境界線ぼかし
-DX_BLENDMODE_XOR = 6  # XORブレンド( ソフトウエアレンダリングモードでのみ有効 )
-DX_BLENDMODE_DESTCOLOR = 8  # カラーは更新されない
-DX_BLENDMODE_INVDESTCOLOR = 9  # 描画先の色の反転値を掛ける
-DX_BLENDMODE_INVSRC = 10  # 描画元の色を反転する
-DX_BLENDMODE_MULA = 11  # アルファチャンネル考慮付き乗算ブレンド
-DX_BLENDMODE_ALPHA_X4 = 12  # αブレンドの描画元の輝度を最大４倍にできるモード
-DX_BLENDMODE_ADD_X4 = 13  # 加算ブレンドの描画元の輝度を最大４倍にできるモード
-DX_BLENDMODE_SRCCOLOR = 14  # 描画元のカラーでそのまま描画される
-DX_BLENDMODE_HALF_ADD = 15  # 半加算ブレンド
-DX_BLENDMODE_SUB1 = 16  # 内部処理用減算ブレンド１
-DX_BLENDMODE_PMA_ALPHA = 17  # 乗算済みαブレンドモードのαブレンド
-DX_BLENDMODE_PMA_ADD = 18  # 乗算済みαブレンドモードの加算ブレンド
-DX_BLENDMODE_PMA_SUB = 19  # 乗算済みαブレンドモードの減算ブレンド
-DX_BLENDMODE_PMA_INVSRC = 20  # 乗算済みαブレンドモードの描画元の色を反転する
+DX_BLENDMODE_SUB2 = 5           # 内部処理用減算ブレンド２
+# DX_BLENDMODE_BLINEALPHA = 7   # 境界線ぼかし
+DX_BLENDMODE_XOR = 6            # XORブレンド( ソフトウエアレンダリングモードでのみ有効 )
+DX_BLENDMODE_DESTCOLOR = 8      # カラーは更新されない
+DX_BLENDMODE_INVDESTCOLOR = 9   # 描画先の色の反転値を掛ける
+DX_BLENDMODE_INVSRC = 10        # 描画元の色を反転する
+DX_BLENDMODE_MULA = 11          # アルファチャンネル考慮付き乗算ブレンド
+DX_BLENDMODE_ALPHA_X4 = 12      # αブレンドの描画元の輝度を最大４倍にできるモード
+DX_BLENDMODE_ADD_X4 = 13        # 加算ブレンドの描画元の輝度を最大４倍にできるモード
+DX_BLENDMODE_SRCCOLOR = 14      # 描画元のカラーでそのまま描画される
+DX_BLENDMODE_HALF_ADD = 15      # 半加算ブレンド
+DX_BLENDMODE_SUB1 = 16          # 内部処理用減算ブレンド１
+DX_BLENDMODE_PMA_ALPHA = 17     # 乗算済みαブレンドモードのαブレンド
+DX_BLENDMODE_PMA_ADD = 18       # 乗算済みαブレンドモードの加算ブレンド
+DX_BLENDMODE_PMA_SUB = 19       # 乗算済みαブレンドモードの減算ブレンド
+DX_BLENDMODE_PMA_INVSRC = 20    # 乗算済みαブレンドモードの描画元の色を反転する
 DX_BLENDMODE_PMA_ALPHA_X4 = 21  # 乗算済みαブレンドモードのαブレンドの描画元の輝度を最大４倍にできるモード
-DX_BLENDMODE_PMA_ADD_X4 = 22  # 乗算済みαブレンドモードの加算ブレンドの描画元の輝度を最大４倍にできるモード
-DX_BLENDMODE_LIVE2D_ZERO = 23  # Live2D のブレンドモード Zero 用
-DX_BLENDMODE_LIVE2D_NORMAL = 24  # Live2D のブレンドモード Normal 用
-DX_BLENDMODE_LIVE2D_ADD = 25  # Live2D のブレンドモード Add 用
-DX_BLENDMODE_LIVE2D_MULT = 26  # Live2D のブレンドモード Mult 用
-DX_BLENDMODE_LIVE2D_MASK = 27  # Live2D のブレンドモード Mask 用
-DX_BLENDMODE_NUM = 28  # ブレンドモードの数
+DX_BLENDMODE_PMA_ADD_X4 = 22    # 乗算済みαブレンドモードの加算ブレンドの描画元の輝度を最大４倍にできるモード
+DX_BLENDMODE_LIVE2D_ZERO = 23   # Live2D のブレンドモード Zero 用
+DX_BLENDMODE_LIVE2D_NORMAL = 24 # Live2D のブレンドモード Normal 用
+DX_BLENDMODE_LIVE2D_ADD = 25    # Live2D のブレンドモード Add 用
+DX_BLENDMODE_LIVE2D_MULT = 26   # Live2D のブレンドモード Mult 用
+DX_BLENDMODE_LIVE2D_MASK = 27   # Live2D のブレンドモード Mask 用
+DX_BLENDMODE_NUM = 28           # ブレンドモードの数
 
 # DrawGraphF 等の浮動小数点値で座標を指定する関数における座標タイプ
 DX_DRAWFLOATCOORDTYPE_DIRECT3D9 = 0  # Direct3D9タイプ( -0.5f の補正を行わないとテクスチャのピクセルが綺麗にマップされないタイプ )
@@ -1000,9 +1000,9 @@ DX_CHANGESCREEN_DEFAULT = -2        # 画面の変更は失敗しデフォルト
 DX_CHANGESCREEN_REFRESHNORMAL = -3  # 画面の変更は成功したが、リフレッシュレートの変更は失敗した
 
 # ストリームデータ制御のシークタイプ定義
-STREAM_SEEKTYPE_SET = SEEK_SET
-STREAM_SEEKTYPE_END = SEEK_END
-STREAM_SEEKTYPE_CUR = SEEK_CUR
+STREAM_SEEKTYPE_SET = 0   #SEEK_SET
+STREAM_SEEKTYPE_END = 2   #SEEK_END
+STREAM_SEEKTYPE_CUR = 1   #SEEK_CUR
 
 # グラフィックロード時のイメージタイプ
 LOADIMAGE_TYPE_FILE = 0   # イメージはファイルである

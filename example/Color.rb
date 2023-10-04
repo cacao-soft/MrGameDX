@@ -20,7 +20,7 @@ class ControlPanel < Sprite
     # 各プロパティの描画
     COLOR_PARAMS.each_with_index do |prop,i|
       self.image.draw_text(18, 4+16*i, "#{prop[0].upcase}: #{@bgcolor.send(prop)}")
-    end    
+    end
     # カーソルの描画
     self.image.draw_text(4, 4+16*@index, "▶")
   end
@@ -42,23 +42,21 @@ class ControlPanel < Sprite
 end
 
 
-
 Dxlib::Init(320, 240)
 
-background = Sprite.new(image: Image.new(Dxlib.screen_width, Dxlib.screen_height, 0))
+background = Sprite.new(image: Image.new)
 panel = ControlPanel.new
-
 
 Dxlib.loop do |fps|
 
   break if Input.press?(:ESCAPE)
-  
+
   # 画面の左半分を白色にする
   Dxlib::DrawBox(0, 0, Dxlib.screen_width / 2, Dxlib.screen_height, 0xFFFFFF)
-      
+
   # タイトルを変更
   Dxlib.window_text = "カラーテスト (FPS: #{fps} )"
-  
+
   panel.update
 
   # 背景色の変更

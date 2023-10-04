@@ -1,5 +1,18 @@
+# 矢印キーで移動
+# Shift + 上下キーで伸縮
+# Shift + 左右キーで回転
+
+
 # DXライブラリの初期化
 Dxlib::Init(800, 600)
+
+back_sp = Sprite.new
+back_sp.image = Image.new.with {
+  draw_boxf(280, 60, 80, 80, RGB(220, 200, 0))
+  draw_box(310, 100, 84, 64, RGB(200, 100, 120), 4)
+  draw_circle(200, 350, 100, RGB(100, 230, 100))
+  draw_quadrangle(500, 440, 560, 300, 720, 380, 680, 510, RGB(100, 160, 250))
+}
 
 # スプライトを生成
 sp = Sprite.new(x: 100, y: 200)
@@ -19,7 +32,7 @@ sp.y = (Dxlib.screen_height - sp.image.height) / 2
 Dxlib.loop do
   # Esc キーが押されたら終了
   break if Input.press?(:ESCAPE)
-  
+
   if Input.press?(:SHIFT)   # シフトキーと同時押し
   	# 大きさを変更
     if Input.press?(:UP)
@@ -42,5 +55,7 @@ end
 
 # 画像の解放
 sp.image.dispose
+back_sp.image.dispose
 # スプライトの解放
 sp.dispose
+back_sp.dispose
